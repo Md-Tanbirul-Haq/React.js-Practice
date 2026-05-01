@@ -6,7 +6,7 @@ import React from 'react';
 
 const TaskCard = ({ Data }) => {
     return (
-          <Card variant="default" className="w-[400px]">
+          <Card variant="default" className="w-[400px] border-2">
                 {/* <CircleDollar aria-label="Dollar sign icon" className="text-primary size-6" role="img" /> */}
                 <Card.Header>
                     <Card.Title>{Data.title}</Card.Title>

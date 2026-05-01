@@ -8,7 +8,7 @@ const TaskPage = () => {
     return (
         <div>
             <h1>Total Data : {data.length}</h1>
-            <div>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
 
                 { 
                 
