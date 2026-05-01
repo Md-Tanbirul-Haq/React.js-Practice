@@ -25,19 +25,19 @@ export function Task_Form({ createPost }) {
             <Modal.Body className="p-6">
               <Surface variant="default">
 
-
+   
                 <form action={createPost} className="flex flex-col gap-4">
-                  <TextField className="w-full" name="name" type="text">
+                  <TextField className="w-full" name="title" type="text">
                     <Label>Task Name</Label>
                     <Input placeholder="Enter task name" />
                   </TextField>
-                  <TextField className="w-full" name="details" type="text">
+                  <TextField className="w-full" name="description" type="text">
                     <Label>Details </Label>
                     <Input placeholder="Enter task Details " />
                   </TextField>
-                  <TextField className="w-full" name="details" type="text">
+                   
 
-                    <Select placeholder="Select one">
+                    <Select name="status" placeholder="Select one">
                       <Label>Status</Label>
                       <Select.Trigger>
                         <Select.Value />
@@ -45,16 +45,16 @@ export function Task_Form({ createPost }) {
                       </Select.Trigger>
                       <Select.Popover>
                         <ListBox>
-                          <ListBox.Item id="florida" textValue="Florida">
-                            pending
+                          <ListBox.Item id="pending" textValue="pending">
+                            Pending
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
-                          <ListBox.Item id="delaware" textValue="Delaware">
-                            in progress
+                          <ListBox.Item id="in progress" textValue="in progress">
+                            In Progress
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
-                          <ListBox.Item id="california" textValue="California">
-                            completed
+                          <ListBox.Item id="completed" textValue="completed">
+                            Completed
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
                         </ListBox>
@@ -64,9 +64,9 @@ export function Task_Form({ createPost }) {
 
 
 
-                  </TextField>
-                  <TextField className="w-full" name="details" type="text">
-                     <Select placeholder="Select one">
+                 
+                 
+                     <Select name="priority" placeholder="Select one">
                       <Label>Priority</Label>
                       <Select.Trigger>
                         <Select.Value />
@@ -74,22 +74,22 @@ export function Task_Form({ createPost }) {
                       </Select.Trigger>
                       <Select.Popover>
                         <ListBox>
-                          <ListBox.Item id="florida" textValue="Florida">
-                            high
+                          <ListBox.Item id="high" textValue="high">
+                            High
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
-                          <ListBox.Item id="delaware" textValue="Delaware">
-                            medium
+                          <ListBox.Item id="medium" textValue="medium">
+                            Medium
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
-                          <ListBox.Item id="california" textValue="California">
-                            low
+                          <ListBox.Item id="low" textValue="low">
+                            Low
                             <ListBox.ItemIndicator />
                           </ListBox.Item>
                         </ListBox>
                       </Select.Popover>
                     </Select>
-                  </TextField>
+          
 
 
                   <Modal.Footer>
